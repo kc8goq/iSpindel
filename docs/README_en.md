@@ -28,20 +28,20 @@ iSpindel | iSpindle
 
 > The ```iSpindel``` is currently under active development, please see [this Hobbybrauer.de Thread](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11235)(German). Assistance is welcome and supplements should be submitted by pull request. Many thanks to all who provide support on the basis of basic development work or to find suitable hardware.
 
-![Spindel im Reinwasser](docs/floating.jpg)
-![Dashboard](docs/Dashboard.jpg)
+![iSpindle in clean water](floating.jpg)
+![Dashboard](Dashboard.jpg)
 
 
-## Inhaltverzeichnis
+## Table of Contents
 
 - [License](#license)
 - [Principle](#principle)
   - [Metazentrum](#metazentrum)
-- [Aufbau](#aufbau)
-  - [Bauteile](#bauteile)
-  - [Schaltplan](#schaltplan)
-  - [Schlitten](#schlitten)
-- [Konfiguration](#konfiguration)
+- [Construction](#aufbau)
+  - [Components](#bauteile)
+  - [Circuit Diagram](#schaltplan)
+  - [Sled](#schlitten)
+- [Configuration](#konfiguration)
   - [Ubitdots](#ubitdots)
   - [Portal](#portal)
 - [Graphical User Interface](#graphical-user-interface)
