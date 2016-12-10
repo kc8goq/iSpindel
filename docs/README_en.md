@@ -142,13 +142,13 @@ alt="Druck" width="240" height="180" border="10" /></a>
 - Zu Beginn muss ein kostenloser Account bei [Ubidots.com](https://ubidots.com) erstellt werden
 - Im Menü  ```API Credentials``` erhält man seinen ```Token``` durch das die iSpindel die Berechtigung zum Schreiben der Daten erhält.  
 ***Diesen notieren.***  
-![Token](docs/UbiToken.jpg)  
+![Token](UbiToken.jpg)  
 
 > Update 28.11.16: Durch Auto - Konfiguration sind folgende Schritte nicht mehr nötig
 
 - ~~In diesem Account erstellt man nun ein neues ```Data Source``` und benennt seine iSpindel bsp. "iSpindel001"~~ 
 
-  ![UbiDS](docs/UbiDS.jpg)
+  ![UbiDS](UbiDS.jpg)
 
 - ~~In diesem Device erstellt man nun 3  ```Variable``` das den 3 Datenquellen entspricht die geliefert werden~~
   - ~~Neigung (wird später zu °Plato umgerechnet)~~
@@ -157,7 +157,7 @@ alt="Druck" width="240" height="180" border="10" /></a>
 
   ~~***Notieren dieser 3 ```ID's``` die man über das  ```i``` Icon erhält***~~
 
-  ![IDs](docs/UbiIDs.jpg)~~
+  ![IDs](UbiIDs.jpg)~~
 
 
 ### Portal
@@ -171,17 +171,17 @@ Man verlässt den *Konfiguration-Modus* durch speichern seiner Einstellungen, du
 
 - Ebenfalls stellt man hier den ```Intervall``` ein in dem sie Daten liefert. Dies hat direkt mit der Akku Lebensdauer zu tun. Es empfiehlt sich in der Praxis etwa ```1800``` Sekunden (= 30 Minuten) Takt zu wählen.
 
-   ![Setup](docs/setup.jpg)
+   ![Setup](setup.jpg)
 
 
 - Man erreicht es über
 
-   ![AccessPoint](docs/AP.png)![Portal](docs/Portal.png)
+   ![AccessPoint](AP.png)![Portal](Portal.png)
 
 
 - Eine Übersicht der Daten kann man über den ```Info``` Menüpunkt einsehen
 
-  ![Info](docs/info.png)
+  ![Info](info.png)
 
 > Nach dem man obige Daten eingetragen und gespeichert hat, wird die Spindel sich mit dem Wlan und Ubidots verbinden und die Daten übertragen.  
 Auf der Ubidots Weboberfläche wird man nun unter ```Sources``` sehen dass die Daten aktualisiert werden.  
@@ -207,9 +207,9 @@ Nun kann man im ```Dashboard``` sich seine Graphen nach Belieben zusammenstellen
 
 ## Software 
 
-### Firmware flashen
+### Firmware flashing
 
-[Firmware flashen](docs/Firmware.md)
+[Firmware flashing](Firmware.md)
 
 ### Benutzte Bibliotheken
 
