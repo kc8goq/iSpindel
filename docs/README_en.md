@@ -26,7 +26,7 @@ iSpindel | iSpindle
 > Update 23.11.16: Circuit diagram and firmware
 
 
-> The ```iSpindel``` is currently under active development, please see [this Hobbybrauer.de Thread](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11235)(German). Assistance is welcome and supplements should be submitted by pull request. Many thanks to all who provide support on the basis of basic development work or to find suitable hardware.
+> The ```iSpindle``` is currently under active development, please see [this Hobbybrauer.de Thread](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11235)(German). Assistance is welcome and supplements should be submitted by pull request. Many thanks to all who provide support on the basis of basic development work or to find suitable hardware.
 
 ![iSpindle in clean water](floating.jpg)
 ![Dashboard](Dashboard.jpg)
@@ -37,11 +37,11 @@ iSpindel | iSpindle
 - [License](#license)
 - [Principle](#principle)
   - [Metazentrum](#metazentrum)
-- [Construction](#aufbau)
-  - [Components](#bauteile)
+- [Construction](#construction)
+  - [Components](#components)
   - [Circuit Diagram](#schaltplan)
   - [Sled](#schlitten)
-- [Configuration](#konfiguration)
+- [Configuration](#configuration)
   - [Ubitdots](#ubitdots)
   - [Portal](#portal)
 - [Graphical User Interface](#graphical-user-interface)
@@ -82,27 +82,27 @@ In der Software berechnent man aus den XYZ Beschleunigungswerten den Euler Winke
 
 ***
 
-## Aufbau
+## Construction
 
->***ACHTUNG: dies entspricht Stand 20.11.2016***
+>***ATTENTION: This is accurate as of 20.11.2016***
 
-### Bauteile
+### Components
 
 - [Wemos D1 mini](https://www.wemos.cc/product/d1-mini.html)
-- ```GY-521``` Gyro & Beschleunigungssensor (MPU-6050 auf passendem breakout Board)
-- [DS18B20 Temperatursensor](https://www.maximintegrated.com/en/products/analog/sensors-and-sensor-interface/DS18B20.html)
-- Lochrasterplatine 3x4cm
-- Widerstände
+- ```GY-521``` Gyro & Accelerometer Board (Invensense MPU-6050 Breakout Board)
+- [DS18B20 Temperature Sensor](https://www.maximintegrated.com/en/products/analog/sensors-and-sensor-interface/DS18B20.html)
+- Protoboard 3x4cm
+- Resistors
   - 4k7 Ohm
   - 220k Ohm
   - 470 Ohm
-- Mikro Schalter
-- ```18650 LiIo Zelle``` (z.B. ```Panasonic NCR18650B``` **geschützt** oder ohne **PCB**) ***UNGETESTED***
-- Lipo Lademodul ```TP4056``` ***UNGETESTED***
-- Kunstoff Schlitten (Vorlage zum 3D drucken im repo)
-  - alternativ (Lochraster) Platine ***UNGETESTED***)
+- Micro switches
+- ```18650 LiIon Battery``` (e.g. ```Panasonic NCR18650B``` **protected** or without **PCB**) ***UNTESTED***
+- Lipo Battery Charger ```TP4056``` ***UNTESTED***
+- Plastic Slide (3D printable model in repository)
+  - Alternatively: Protoboard PCB ***UNTESTED***)
 
-- Kunstoff Zylinder ```Petling```
+- Plastic Cylinder ```PET```
 
 > ## Info
 
@@ -116,15 +116,15 @@ Dieser [Petling-XL](http://cachers-world.de/de/Petling-XL) passt zu dem 3D gedru
 ***
 ### Schaltplan
 
-***siehe [Schaltplan](docs/Schaltplan.md)***
+***siehe [Schaltplan](Schaltplan.md)***
 
 ***
 
 ### Schlitten
 
-![Schlitten](docs/Schlitten_cad.jpg)
-![Zusammenbau](docs/assembled2.jpg)
-![Zusammenbau](docs/assembled.jpg)
+![Schlitten](Schlitten_cad.jpg)
+![Zusammenbau](assembled2.jpg)
+![Zusammenbau](assembled.jpg)
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=gpVarh8BxhQ" target="_blank"><img src="http://img.youtube.com/vi/gpVarh8BxhQ/0.jpg" 
 alt="Druck" width="240" height="180" border="10" /></a>
@@ -133,7 +133,7 @@ alt="Druck" width="240" height="180" border="10" /></a>
 
 ***
 
-## Konfiguration
+## Configuration
 
 ### Ubitdots
 
