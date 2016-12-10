@@ -1,4 +1,4 @@
-iSpindel | iSpindle
+iSpindle (iSpindel) Documentation
 ===================
 
 **DIY electronic Hydrometer**
@@ -7,6 +7,7 @@ iSpindel | iSpindle
 ***
 
 ***Translation is work in progress, feel free to contribute***
+***This page was translated on 9 December 2016***
 
 ## Documentation in other languages
 ### [German Documentation (primary)](README.md)
@@ -36,7 +37,7 @@ iSpindel | iSpindle
 
 - [License](#license)
 - [Principle](#principle)
-  - [Metazentrum](#metazentrum)
+  - [Metacentric Height](#metacentric-height)
 - [Construction](#construction)
   - [Components](#components)
   - [Circuit Diagram](#schaltplan)
@@ -62,22 +63,23 @@ iSpindel | iSpindle
 
 ## Principle
 
-Angetrieben von dem Thread [Alternative zu Spindel](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11157&view=unread#p170499) wurde die Idee geboren die kommerziell erhältliche elektronische Bierspindel nachzubauen.
+Powered by the thread [Alternative to the Spindle](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11157&view=unread#p170499), the idea was born to reproduce the commercially available electronic spinning spindle.
 
-Die Idee des krängende Zylinders ist genial wie einfach - man braucht keine externe Referenz (außer der Erde) und der Zylinder ist extrem leicht sauber zu halten. Der Neigungswinkel ändert sich im Verhältnis zum Auftrieb und damit im direkten Zusammenhang mit dem Zuckergehalt.
-Kein unnötiges Öffnen zum spindeln und evtl. Kontaminieren!
+The idea of the heeling (or tilting) cylinder is ingenious and easy - you do not need any external reference (except for gravity) and the cylinder is extremely easy to keep clean. The inclination angle changes in relation to the buoyancy and thus directly in relation to the sugar content.
 
-![Kränung](docs/kraengung.jpg)
+No unnecessary opening to spindles and possibly contamination!
 
-Daher die Idee, ein IoT device mit Wifi zusammen mit einem Beschleunigungssensor und Temperatursensor in einen schwimmenden Zylinder zu legen. Dort wacht er alle bsp. 5min auf, verbindet sich mit meinem Wlan und sendet seinen Neigungswinkel, Temperatur und Akkuspannung an einen Cloudservice. 
+![Kränung](kraengung.jpg)
 
-### *Metazentrum*
+Therefore the idea to put an IoT device with Wifi together with an acceleration sensor and temperature sensor in a floating cylinder. There he watches all bsp. 5min, connects to my Wlan and sends its tilt angle, temperature and battery voltage to a cloud service.
 
-Eigentlich dreht es sich hier um das "Metazentrum", der Zylinder wird solange rotieren bis das Metazentrum im Lot zum Auftriebspunkt ist. Diesen Wert messen wir.
+### *Metacentric Height*
 
-Man kann insofern trimmen, dass man am Boden ein paar Gramm hinzufügt, damit stellt sich der Zylinder mehr auf, oder am Deckel, damit krängt er mehr. 
+Actually, this is the "metacentre", the cylinder will rotate until the metacentrum in the solder is the buoyancy point. We measure this value.
 
-In der Software berechnent man aus den XYZ Beschleunigungswerten den Euler Winkel für X und Y und bildet daraus den Absolutwinkel. Diesen verrechnen wir mit den kalibrierten Eckwerten zum °Plato.
+It is possible to trim by adding a few grams on the ground, so that the cylinder is more upright, or on the lid, so that it is more crowded.
+
+The software calculates the Euler angle for X and Y from the XYZ acceleration values and forms the absolute angle. We compute these with the calibrated parameters for ° Plato.
 
 
 ***
