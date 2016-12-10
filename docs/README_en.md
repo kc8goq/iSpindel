@@ -18,15 +18,15 @@ iSpindel | iSpindle
 
 [![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.me/universam)
 
-> Update 07.12.16: Schaltplan  
-> Update 03.12.16: Firmware 2.1.2 Wlan Verbesserungen  
-> Update 29.11.16: Kalibrierung und Excel Tabelle  
-> Update 28.11.16: Firmware v.2.0 - Ubidots Auto-Konfiguration  
+> Update 07.12.16: Circuit Diagram 
+> Update 03.12.16: Firmware 2.1.2 Wlan Improvements  
+> Update 29.11.16: Calibration and Excel table 
+> Update 28.11.16: Firmware v.2.0 - Ubidots Auto-Configuration  
 > Update 28.11.16: Ubidots Einrichtung  
-> Update 23.11.16: Schaltplan und Firmware
+> Update 23.11.16: Circuit diagram and firmware
 
 
-> Die ```iSpindel``` befindet sich zur Zeit mitten in der Entwicklung, siehe dazu [den Hobbybrauer.de Thread](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11235). Mithilfe ist herzlich willkommen und Ergänzungen bitte per Pull Request einreichen. Großes Dank an alle die Unterstützung leisten seitens Grundlagen erarbeiten oder passende Hardware zu finden.
+> The ```iSpindel``` is currently under active development, please see [this Hobbybrauer.de Thread](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11235)(German). Assistance is welcome and supplements should be submitted by pull request. Many thanks to all who provide support on the basis of basic development work or to find suitable hardware.
 
 ![Spindel im Reinwasser](docs/floating.jpg)
 ![Dashboard](docs/Dashboard.jpg)
