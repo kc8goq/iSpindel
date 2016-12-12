@@ -63,21 +63,20 @@ iSpindle (iSpindel) Documentation
 
 ## Principle
 
-Powered by the thread [Alternative to the Spindle](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11157&view=unread#p170499), the idea was born to reproduce the commercially available electronic spinning spindle.
+Powered by the thread [Alternative to the Spindle](http://hobbybrauer.de/forum/viewtopic.php?f=7&t=11157&view=unread#p170499), the idea was born to reproduce the commercially available electronic tildting spindle using low-cost components.
 
-The idea of the heeling (or tilting) cylinder is ingenious and easy - you do not need any external reference (except for gravity) and the cylinder is extremely easy to keep clean. The inclination angle changes in relation to the buoyancy and thus directly in relation to the sugar content.
+The system is based around the use of a heeling (or tilting) cylinder, an ingenious and easy concept dervied from ships - you do not need any external reference (except for gravity) and the cylinder is extremely easy to keep clean. The inclination angle changes in relation to the buoyancy and thus directly in relation to the sugar content. That is, there is an angle formed between the center of mass and the center of bouyancy depending on the density of the fluid.
 
-No unnecessary opening to spindles and possibly contamination!
 
 ![Kränung](kraengung.jpg)
 
-Therefore the idea to put an IoT device with Wifi together with an acceleration sensor and temperature sensor in a floating cylinder. There he watches all bsp. 5min, connects to my Wlan and sends its tilt angle, temperature and battery voltage to a cloud service.
+Therefore the idea  is to place a Wifi-enable IoT device with an accelerometer and temperature sensor in a floating cylinder. The system will measure the sensors and every 5 minutes it will connect to the Wlan and sends its tilt angle, temperature and battery voltage to a cloud service to store the data.
 
 ### *Metacentric Height*
 
-Actually, this is the "metacentre", the cylinder will rotate until the metacentrum in the solder is the buoyancy point. We measure this value.
+Actually, this is the "metacentre", the cylinder will tilt as the liquid density changes in relation to its center of mass and center of bouyancy. The angle of tilt can then be measured. 
 
-It is possible to trim by adding a few grams on the ground, so that the cylinder is more upright, or on the lid, so that it is more crowded.
+It is possible to trim the cylinder by adding a few grams on the bottom so that the cylinder is more upright, or on the lid, so that it is more tilted.
 
 The software calculates the Euler angle for X and Y from the XYZ acceleration values and forms the absolute angle. We compute these with the calibrated parameters for ° Plato.
 
