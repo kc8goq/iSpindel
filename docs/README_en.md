@@ -40,8 +40,8 @@ iSpindle (iSpindel) Documentation
   - [Metacentric Height](#metacentric-height)
 - [Construction](#construction)
   - [Components](#components)
-  - [Circuit Diagram](#schaltplan)
-  - [Sled](#schlitten)
+  - [Circuit Diagram](#circuit-diagram)
+  - [Sled](#sled)
 - [Configuration](#configuration)
   - [Ubitdots](#ubitdots)
   - [Portal](#portal)
@@ -116,17 +116,17 @@ Dieser [Petling-XL](http://cachers-world.de/de/Petling-XL) passt zu dem 3D gedru
 >Info 2: Zur Zeit ausverkauft, nachbestellt.
 
 ***
-### Schaltplan
+### Circuit Diagram
 
-***siehe [Schaltplan](Schaltplan.md)***
+***Please see (German) [Circuit Diagram](Schaltplan.md)***
 
 ***
 
-### Schlitten
-
-![Schlitten](Schlitten_cad.jpg)
-![Zusammenbau](assembled2.jpg)
-![Zusammenbau](assembled.jpg)
+### Sled
+- A 3D Printed sled is used to secure the electronics and battery inside the plastic housing as shown below. The 3D model can be found in the repository.
+![Sled](Schlitten_cad.jpg)
+![Assembled](assembled2.jpg)
+![Assembled](assembled.jpg)
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=gpVarh8BxhQ" target="_blank"><img src="http://img.youtube.com/vi/gpVarh8BxhQ/0.jpg" 
 alt="Druck" width="240" height="180" border="10" /></a>
@@ -137,32 +137,19 @@ alt="Druck" width="240" height="180" border="10" /></a>
 
 ## Configuration
 
-### Ubitdots
+### Ubidots
 
-- Zu Beginn muss ein kostenloser Account bei [Ubidots.com](https://ubidots.com) erstellt werden
-- Im Menü  ```API Credentials``` erhält man seinen ```Token``` durch das die iSpindel die Berechtigung zum Schreiben der Daten erhält.  
-***Diesen notieren.***  
+- To start, you must create a free account at [Ubidots.com](https://ubidots.com)
+- Next, you must go to the menu  ```API Credentials``` to get a ```Token``` to be used by the iSpindle to authorize writing data to the Ubidots account.
+***Write this down.***  
 ![Token](UbiToken.jpg)  
 
-> Update 28.11.16: Durch Auto - Konfiguration sind folgende Schritte nicht mehr nötig
-
-- ~~In diesem Account erstellt man nun ein neues ```Data Source``` und benennt seine iSpindel bsp. "iSpindel001"~~ 
-
-  ![UbiDS](UbiDS.jpg)
-
-- ~~In diesem Device erstellt man nun 3  ```Variable``` das den 3 Datenquellen entspricht die geliefert werden~~
-  - ~~Neigung (wird später zu °Plato umgerechnet)~~
-  - ~~Temperatur (fließt auch in °Plato ein)~~
-  - ~~Batterie Spannung~~ 
-
-  ~~***Notieren dieser 3 ```ID's``` die man über das  ```i``` Icon erhält***~~
-
-  ![IDs](UbiIDs.jpg)~~
+> Update 28.11.16: This process was simplified, removing several steps. They have been omitted from translation.
 
 
 ### Portal
 
-Durch mehrmaliges Drücken der ```Reset Taste``` erstellt der Wemos einen AccessPoint, mit dem verbunden man die nötigen Einstellugen vornehmen kann.
+By pressing the  ```Reset Button``` the Wemos creates an access point, which allows you to make the necessary settings to configure the device.
 
 > Die ```iSpindel``` signalisiert dass sie sich im *Konfiguration-Modus* druch permanentes Blinken im Sekundentakt.  
 Man verlässt den *Konfiguration-Modus* durch speichern seiner Einstellungen, durch betätigen des Menüpunkts ```Start iSpindel``` oder durch warten von 5 Minuten. Danach befindet sie sich im *Betriebsmodus* d.h. sie sendet ihre Daten und geht daraufhin direkt in den "Deep Sleep" Standby Modus. Daher ist sie im normalen Modus nicht erreibar.
